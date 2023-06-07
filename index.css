@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  #color,
+  #mode,
+  form button {
+    height: 40px; /* Adjust the height as needed */
+    padding: 5px; /* Adjust the padding as needed */
+    margin-right: 10px; /* Adjust the margin between elements as needed */
+    cursor: pointer;
+  }
+
+  #color:hover,
+  #mode:hover,
+  form button:hover {
+  /* Add your hover styles here */
+  /* For example, you can change the background color and add a box shadow */
+  background-color: lightgray;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  color: black;
+}
+  
+  form button{
+    border: none;
+    background-color: dodgerblue;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  #mode {
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+
+
+  #color{
+    width: 90px;
+    border: none;
+    background-color: transparent;
+    height: 70px;
+  }
+  
+  
+/* CSS for Colors once rendered */
+.color-palette-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  height: calc(100% - 20px);
+  overflow: hidden;
+}
+
+.color-palette-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.color-palette-column:last-child {
+  margin-right: 0;
+}
+
+.color-palette-column p {
+  margin: 10px 0;
+  text-align: center;
+  color: white; /* Set the desired font color */
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Set the desired text shadow */
+  background-color: rgba(0, 0, 0, 0.3); /* Set a darker background color */
+  padding: 5px; /* Add some padding */
+  border: 1px solid black; 
+}
+
+.hex-code-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.hex-code-container p {
+  margin-top: 10px;
+  text-align: center;
+  color: white; /* Set the desired font color */
+}
